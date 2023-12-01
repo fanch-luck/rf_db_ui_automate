@@ -1,0 +1,14 @@
+base_url: https://www.baidu.com
+search_word: 'robot framework'
+num_to_record: 5
+
+search_word_list:
+  - robot framework
+  - openai
+  - chat gpt
+  - spacex
+  - huawei
+
+screenshots_save_dict:
+  save_path: temp/screenshots/
+  save_format: png
