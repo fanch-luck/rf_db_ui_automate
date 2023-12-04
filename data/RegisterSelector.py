@@ -44,11 +44,11 @@ class RegisterSelector:
     RE_DOWNLOAD_ENTRUST_PAPER_LINK = 'div[class="el-card__body"] span>a>span:text("点击下载")'  # 下载委托书（模板）
     RE_UPLOAD_ENTRUST_PAPER_BUTTON = 'div[class="el-card__body"] button>span:text("上传委托书")'  # 上传委托书
     RE_UPLOAD_BUSINESS_LICENSE_BUTTON = 'div[class="el-card__body"] button>span:text("上传组织机构代码证/营业执照")' # 上传组织机构代码证/营业执照
-    RE_UPLOAD_SAFER_IDCARD_PORTRAIT_BUTTON = 'div[class="el-card__body"] span>a>span:text("上传身份证人像面")'  # 身份证人像面
-    RE_UPLOAD_SAFER_IDCARD_EMBLEM_BUTTON = 'div[class="el-card__body"] span>a>span:text("上传身份证国徽面")'  # 身份证国徽面
-    RE_RECORDED_YES_RADIO = 'div[class="el-card__body"] div[role="radiogroup"] span:has-text("已备案")'  # 已备案
+    RE_UPLOAD_SAFER_IDCARD_PORTRAIT_BUTTON = 'div[class="el-card__body"] button>span:has-text("上传身份证人像面")'  # 身份证人像面
+    RE_UPLOAD_SAFER_IDCARD_EMBLEM_BUTTON = 'div[class="el-card__body"] button>span:has-text("上传身份证国徽面")'  # 身份证国徽面
+    RE_RECORDED_YES_RADIO = 'div[class="el-card__body"] div[role="radiogroup"] label:has-text("已备案")'  # 已备案
     RE_RECORDED_CODE_INPUT = 'div[class="el-card__body"] div>input[placeholder="备案表编号"]'  # 已备案编号,只有已备案才显示
-    RE_RECORDED_NO_RADIO = 'div[class="el-card__body"] div[role="radiogroup"] span:has-text("未备案")'  # 未备案
+    RE_RECORDED_NO_RADIO = 'div[class="el-card__body"] div[role="radiogroup"] label:has-text("未备案")'  # 未备案
     RE_IP_ADDRESS_INPUT = 'div[class="el-card__body"] div>input[placeholder="固定公网IP地址"]'  #
     RE_SUBMIT_BUTTON = 'div[class="el-card__body"] button>span:text("提 交")'  # 注册提交
     RE_CANCEL_BUTTON = 'div[class="el-card__body"] span>a>span:text("取 消")'  # 注册取消，返回
