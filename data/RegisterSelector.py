@@ -27,7 +27,7 @@ class RegisterSelector:
     FP_LOGIN_BUTTON = 'div[class=btn_box]>button>span:text("登 录")'  # 打开新标签页
     FP_REGISTER_BUTTON = 'div[class=btn_box]>button>span:text("注 册")'  # 保持在当前页面
     FP_MANUAL_BUTTON = 'div[class=btn_box]>button>span:text("查 看 手 册")'  # 打开新标签页
-    FP_UNIT_REGIST_LINK = 'div[class="content_box___Lf_tu"] ul>li span:text("注册")'
+    FP_REGIST_LINK = 'div[class="content_box___Lf_tu"] ul>li span:text("注册")'
     FP_CHECK_RESULT_LINK = 'div[class="content_box___Lf_tu"] ul>li span:text("查询")'
     FP_LOGIN_LINK = 'div[class="content_box___Lf_tu"] ul>li span:text("登录")'
     FP_QUESTIONS_LINK = 'div[class="content_box___Lf_tu"] ul>li span:text("这里")'
@@ -52,4 +52,17 @@ class RegisterSelector:
     RE_IP_ADDRESS_INPUT = 'div[class="el-card__body"] div>input[placeholder="固定公网IP地址"]'  #
     RE_SUBMIT_BUTTON = 'div[class="el-card__body"] button>span:text("提 交")'  # 注册提交
     RE_CANCEL_BUTTON = 'div[class="el-card__body"] span>a>span:text("取 消")'  # 注册取消，返回
+    RE_FINISHED_TEXT = 'div[class="el-card__body"] div[class="el-result"] span:text("注册完成！")'
+    RE_FINISHED_RETURN_BUTTON = 'div[class="el-card__body"] div[class="el-result"] button:has-text("返回")'
+    # 常见问题（仍在‘首页范围内’）questions
+    QU_NAME = 'div[class="ax_default box_1"]>div[class="text "]>p>span:has-text("常见问题")'
+    QU_QUESTION = 'div[class="ax_default _文本段落"] div[role="tablist"] div[role="button"] span[class="span_text"]'
+    # 查询注册结果（仍在‘首页’范围内）-register result
+    RR_NAME = 'div[class="el-card__body"]>p>span:text("查询注册结果")'
+    RR_UNIT_NAME_INPUT = 'div[class="el-card__body"] div>input[placeholder="单位名称(全称)"]'
+    RR_SAFER_NAME_INPUT = 'div[class="el-card__body"] div>input[placeholder="安全员姓名"]'
+    RR_SAFER_EMAIL_INPUT = 'div[class="el-card__body"] div>input[placeholder="安全员电子邮箱"]'
+    RR_QUERY_BUTTON = 'div[class="el-card__body"] button>span:text("查 询")'
+    RR_QUERY_RESULT_UNDER_REVIEW = 'div[id="regist_esult_main"] div[class="el-result"] svg'  # svg属性class:icon-warning审核中
+    RR_QUERY_RETURN_BUTTON = 'div[id="regist_esult_main"] div[class="el-result"] button>span:text("返回")'
 
